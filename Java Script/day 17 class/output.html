@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World</title>
+        <style>
+            h1{
+                border:solid;
+                border-color: blueviolet;
+                border-radius: 50px;
+                width: 90%;
+                padding: 30px;
+                text-align: center;
+                background-color: aqua;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="abc">abc</h1>
+        <script>
+            var x = prompt("enter your name: ");
+            var y = "Welcome " + x;
+            var z = document.getElementById("abc").innerHTML = y;
+        </script>
+    </body>
+</html>

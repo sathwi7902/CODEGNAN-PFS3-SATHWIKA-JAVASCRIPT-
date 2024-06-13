@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form name="details">
+            <input type="text" name="username">
+            <br>
+            <br>
+            <input type="password" name="pass">
+            <br>
+            <br>
+            <button onclick="validate(); return false ;"></button>
+        </form>
+        <script>
+            function validate(){
+                var x = document.forms['details']['username'];
+                var un =x.value;
+                var y = document.forms['details']['pass'];
+                var pwd = y.value;
+                console.log(un+pwd);
+                if (un=="sathwi" && pwd=="7902"){
+                    alert("Login successfull");
+                }
+                else{
+                        alert("Login Unsuccessfull");
+                    }
+
+            }
+        </script>
+    </body>
+</html>
